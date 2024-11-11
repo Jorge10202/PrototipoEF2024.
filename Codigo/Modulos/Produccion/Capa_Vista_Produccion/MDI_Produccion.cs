@@ -438,6 +438,11 @@ namespace Capa_Vista_Produccion
             }
         }
 
+        private void lbl_user_Click(object sender, EventArgs e)
+        {
+
+        }
+
         // Restaurar el tamaño original de la ventana
         private void btnRestaurar_Click_1(object sender, EventArgs e)
         {

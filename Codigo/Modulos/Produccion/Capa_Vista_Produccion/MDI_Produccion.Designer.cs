@@ -63,6 +63,7 @@ namespace Capa_Vista_Produccion
             this.lbl_fecha_y_hora = new System.Windows.Forms.Label();
             this.panelIdentificacion = new System.Windows.Forms.Panel();
             this.pb_Fondo = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Maximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Restaurar)).BeginInit();
@@ -83,6 +84,7 @@ namespace Capa_Vista_Produccion
             // panelBarraTitulo
             // 
             this.panelBarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(131)))), ((int)(((byte)(204)))));
+            this.panelBarraTitulo.Controls.Add(this.label1);
             this.panelBarraTitulo.Controls.Add(this.btn_Maximizar);
             this.panelBarraTitulo.Controls.Add(this.btn_Restaurar);
             this.panelBarraTitulo.Controls.Add(this.btn_Minimizar);
@@ -520,6 +522,7 @@ namespace Capa_Vista_Produccion
             this.lbl_user.Size = new System.Drawing.Size(55, 17);
             this.lbl_user.TabIndex = 6;
             this.lbl_user.Text = "usuario";
+            this.lbl_user.Click += new System.EventHandler(this.lbl_user_Click);
             // 
             // lbl_fecha_y_hora
             // 
@@ -557,6 +560,15 @@ namespace Capa_Vista_Produccion
             this.pb_Fondo.TabIndex = 3;
             this.pb_Fondo.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(631, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(172, 17);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Jorge Avila 0901-21-1280";
+            // 
             // MDI_Produccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -574,6 +586,7 @@ namespace Capa_Vista_Produccion
             this.Name = "MDI_Produccion";
             this.Text = "MDI_Produccion";
             this.panelBarraTitulo.ResumeLayout(false);
+            this.panelBarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Maximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Restaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Minimizar)).EndInit();
@@ -628,5 +641,6 @@ namespace Capa_Vista_Produccion
         private System.Windows.Forms.PictureBox btn_Cerrar;
         private System.Windows.Forms.PictureBox btn_Maximizar;
         private System.Windows.Forms.Panel panelIdentificacion;
+        private System.Windows.Forms.Label label1;
     }
 }
